@@ -57,6 +57,7 @@ const initialFormData = {
           </strong>
         </p>
 
+
         <label htmlFor="name">
       Name
       <strong>
@@ -79,6 +80,7 @@ const initialFormData = {
           <span aria-label="required">*</span>
       </strong>
   </label>
+  {/* <select></select> */}
   <input
       type="text"
       id="country"
@@ -88,6 +90,29 @@ const initialFormData = {
       placeholder="Insert Country Code, e.g. UK"
       required
   />
+
+
+{/* <label htmlFor="country">
+  Country code
+  <strong>
+      <span aria-label="required">*</span>
+  </strong>
+</label>
+<select
+  id="country"
+  name="country"
+  onChange={(e) => updateFormField(e)}
+  value={formData.country}
+  required
+>
+  <option value="">Select a country code</option>
+  <option value="AF">Afghanistan</option>
+  <option value="AL">Albania</option>
+  <option value="DZ">Algeria</option>
+  <option value="AS">American Samoa</option>
+  ...
+</select> */}
+
 
 <label htmlFor="photo">
       Photo

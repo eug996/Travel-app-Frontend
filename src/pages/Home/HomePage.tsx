@@ -6,13 +6,11 @@ import LocationList, { type Location } from "../../components/LocationList/Locat
 
 
 
-// type RespondData = {
-//   locations: Location [];
-// }
+ export type RespondData = {locations:Location[];}
   
   
 export default function HomePage() {
-  const { data, error } = useFetch<Location[]>(process.env.REACT_APP_DB_URL);
+  const { data, error } = useFetch<RespondData>(process.env.REACT_APP_DB_URL);
   if (error)
       return (
           <p aria-live="polite" role="status">
@@ -25,8 +23,9 @@ export default function HomePage() {
               Loading...
           </p>
       );
+      const {locations} = data;
+  return <LocationList locations={locations} />;
   
-  return <LocationList locations={data} />;
   
 
 }

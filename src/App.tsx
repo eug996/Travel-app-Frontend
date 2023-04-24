@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/Create",
+    path: "/create",
     element: <CreatePage />,
   },
   {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     element: <LocationPage />,
   },
   {
-    path: "/Search",
+    path: "/search",
     element: <SearchPage />,
   },
 ],

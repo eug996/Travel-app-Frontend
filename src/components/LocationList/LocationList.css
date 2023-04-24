@@ -1,4 +1,4 @@
-.recipe-grid {
+.location-grid {
     display: grid;
     grid-template-rows: 1fr;
     align-items: stretch;
@@ -6,24 +6,24 @@
   }
   
   @media (max-width: 539.99px) {
-    .recipe-grid {
+    .location-grid {
       grid-template-columns: repeat(1, 1fr);
     }
   }
   
   @media (min-width: 540px) and (max-width: 799.99px) {
-    .recipe-grid {
+    .location-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
   @media (min-width: 800px) {
-    .recipe-grid {
+    .location-grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   
-  .recipe-card {
+  .location-card {
     background-color: var(--bg-card);
     border: 1px solid var(--text);
     padding: 16px;
